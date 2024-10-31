@@ -1,0 +1,2 @@
+_target_: lambo5utr.tokenizer.DNAkmerTokenizer
+kmer: 3

@@ -1,0 +1,4 @@
+_target_: lambo5utr.tokenizer_dnabert.DnaBertTokenizer
+vocab_file: ${pretrained_path}/vocab.txt
+padding_side: left
+truncation_side: left

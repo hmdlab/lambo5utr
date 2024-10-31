@@ -1,0 +1,9 @@
+_target_: lambo5utr.optimizers.pymoo.ModelBasedGeneticOptimizer
+_recursive_: False
+num_rounds: 64
+num_gens: 16
+seed: ${seed}
+concentrate_pool: 1
+residue_sampler: uniform # or mlm to activate MLM in the encoder
+resampling_weight: 1.
+encoder_obj: mll

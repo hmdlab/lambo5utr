@@ -1,0 +1,13 @@
+_target_: lambo5utr.tasks.regex.RegexTask
+regex_list:
+  - "(?=AGTG)"
+  - "(?=CACG)"
+obj_dim: 2
+log_prefix: regex
+min_seq_len: 32
+max_seq_len: 52
+num_start_examples: 512
+batch_size: 16
+max_num_edits: null
+max_ngram_size: 1
+allow_len_change: False # True

@@ -1,0 +1,19 @@
+_target_: lambo5utr.models.encoder_bert.DnaBertLmheadForLambo
+name: bertlmheaddenc
+pretrained_path: ${pretrained_path}
+batch_size: 32
+num_epochs: 128
+patience: 32
+# lr: 1e-3
+max_shift: 0
+mask_ratio: 0.125
+fromscratch: False
+# parameters for BertEncoderForLambo
+out_dim: 16
+kernel_size: 5
+p: 0.
+layernorm: True
+max_len_delta: 0
+max_seq_len: ${task.max_seq_len}
+device: ${device}
+device_id: ${device_id}

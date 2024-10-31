@@ -1,0 +1,14 @@
+.venv/
+hydra_log/
+notebooks/tmp/
+lambo5utr/__pycache__/
+lambo5utr/models/__pycache__/
+renv/
+tmp/
+wandb/
+.Rprofile
+hydra_config.txt
+.vscode/
+lambo5utr.egg-info/
+*.pyc
+

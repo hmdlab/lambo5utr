@@ -1,0 +1,36 @@
+defaults:
+  - _self_
+  - logger: local
+  - task: regex_dna
+  - acquisition: nehvi
+  - encoder: mlm_cnn
+  - optimizer: lambo
+  - optimizer/algorithm: nsga2 # nsga2 for mf_genetic soga for mb_genetic
+  - tokenizer: dna
+  - surrogate: multi_task_exact_gp
+
+
+pretrained_path: /home/keisuke-yamada/DNABERT/3-new-12w-0
+seed: None
+trial_id: 0
+project_name: lambo5utr
+version: v2.4.0
+# hptune: True
+# hptune_num: 3
+
+device: gpu
+device_id: 0
+
+# Directories for loading and storing data
+exp_name: test
+job_name: null
+timestamp: ${now:%Y-%m-%d_%H-%M-%S}
+log_dir: ./hydra_log/${exp_name}
+wandb_mode: online
+
+hydra:
+  run:
+    dir: ./${log_dir}
+  sweep:
+    dir: ./${log_dir}
+    subdir: .

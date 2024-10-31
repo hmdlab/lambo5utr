@@ -1,0 +1,18 @@
+_target_: lambo5utr.tasks.mrl.task_mugd_cnn.MrlUlessG4DegradationTask
+obj_dim: 4
+log_prefix: task_mugd_cnn
+path_mrl_predictor: misc/retrained_main_MRL_model.hdf5
+min_seq_len: 50
+max_seq_len: 50
+num_start_examples: 512
+seq_seed: 10000
+init_randomize: False
+given_filename: None
+batch_size: 16
+max_num_edits: null
+max_ngram_size: 1
+allow_len_change: False # True
+num_gpu_mrl: 1
+device_id: ${device_id}
+construct:
+  _target_: lambo5utr.constructs.construct_sample2019.ConstructSample2019EGFP
