@@ -14,7 +14,7 @@ We have developed our model in the following environment. We strongly recommend 
 ### Installation of MOBO-5UTR
 Clone this repository to the local environment.
 ```
-git clone https://github.com/hmdlab/lambo5utr.git
+git clone https://github.com/hmdlab/mobo5utr.git
 ```
 Install the necessary python packages along with the `lambo5utr` package as shown below.
 ```
