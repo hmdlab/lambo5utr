@@ -63,7 +63,7 @@ Use the following scripts to test your installation. This test took ~20min with 
 source run_test.sh
 ```
 
-## Running LaMBO-DNABERT
+## Running MOBO-5UTR
 Use the following script for running LaMBO-DNABERT.  
 The entire training took ~12h with 2 GPUs in our environment.
 ```
