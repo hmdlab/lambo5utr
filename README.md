@@ -1,6 +1,6 @@
-# LaMBO-DNABERT
+# MOBO-5UTR
 ## Overview
-LaMBO-DNABERT is a sequence optimization model that combines [LaMBO](https://github.com/samuelstanton/lambo) and [DNABERT](https://github.com/jerryji1993/DNABERT). From the original LaMBO architecture, we incorporated the pre-trained DNA language model as a denoising autoencoder to leverage its learned genomic information. Our model demonstrated improved performance in optimizing human 5' UTR sequences across up to four computational objectives, including AGC content, mean ribosome load (MRL), in vitro stability, and reduced G4 tendency.
+MOBO-5UTR is a sequence optimization model that combines [LaMBO](https://github.com/samuelstanton/lambo) and [DNABERT](https://github.com/jerryji1993/DNABERT). From the original LaMBO architecture, we incorporated the pre-trained DNA language model as a denoising autoencoder to leverage its learned genomic information. Our model demonstrated improved performance in optimizing human 5' UTR sequences across up to four computational objectives, including AGC content, mean ribosome load (MRL), in vitro stability, and reduced G4 tendency.
 
 ## Installation
 ### Environment
@@ -11,7 +11,7 @@ We have developed our model in the following environment. We strongly recommend 
 - Python: 3.8.10
 - R: 4.1.2 (only for G4 prediction)
 
-### Installation of LaMBO-DNABERT
+### Installation of MOBO-5UTR
 Clone this repository to the local environment.
 ```
 git clone https://github.com/hmdlab/lambo5utr.git
@@ -53,7 +53,6 @@ export KOV_PATH="/path/to/KaggleOpenVaccine"
 3. Installation of DeepG4
 Build the R environment from renv.lock. The DeepG4 package will be included in the environment.
 ```
-cd run_scripts
 R
 > renv::restore()
 > q()
