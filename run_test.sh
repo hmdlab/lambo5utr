@@ -12,7 +12,7 @@ echo "=================================================="
 echo "LaMBO-DNABERT Test 1/4: Checking predictors"
 echo "=================================================="
 echo -e "==================================================\n"
-# python3 ./python_scripts/test_predictors.py
+python3 ./python_scripts/test_predictors.py
 
 echo -e "\n=================================================="
 echo "=================================================="
@@ -20,7 +20,7 @@ echo "LaMBO-DNABERT Test 2/4: Checking DNABERT"
 echo "=================================================="
 echo -e "==================================================\n"
 
-# python3 ./python_scripts/test_dnabert.py seed=$SEED trial_id=$TRIAL device_id=$DEVICE_ID exp_name=exp_test task=regex_dna optimizer=lambo tokenizer=dnapretrained encoder=dnabertonly
+python3 ./python_scripts/test_dnabert.py seed=$SEED trial_id=$TRIAL device_id=$DEVICE_ID exp_name=exp_test task=regex_dna optimizer=lambo tokenizer=dnapretrained encoder=dnabertonly
 
 echo -e "\n=================================================="
 echo "=================================================="
@@ -29,7 +29,7 @@ echo "This step would take a few minutes."
 echo "=================================================="
 echo -e "==================================================\n"
 
-# python3 ./python_scripts/test_lambo.py seed=$SEED trial_id=$TRIAL device_id=$DEVICE_ID exp_name=exp_test task=regex_dna optimizer=lambo tokenizer=dna encoder=mlm_cnn surrogate=multi_task_exact_gp_cnn surrogate.num_epochs=8 optimizer.num_rounds=1 optimizer.num_gens=3 optimizer.num_opt_steps=2 wandb_mode=offline
+python3 ./python_scripts/test_lambo.py seed=$SEED trial_id=$TRIAL device_id=$DEVICE_ID exp_name=exp_test task=regex_dna optimizer=lambo tokenizer=dna encoder=mlm_cnn surrogate=multi_task_exact_gp_cnn surrogate.num_epochs=8 optimizer.num_rounds=1 optimizer.num_gens=3 optimizer.num_opt_steps=2 wandb_mode=offline
 
 echo -e "\n=================================================="
 echo "=================================================="

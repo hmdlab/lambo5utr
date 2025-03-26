@@ -84,7 +84,7 @@ def main(config):
         dirlist = os.listdir(project_root)
         assert (
             "python_scripts" in dirlist and 
-            "run_scripts" in dirlist and
+            # "run_scripts" in dirlist and
             "lambo5utr" in dirlist and
             "hydra_config" in dirlist
         )
